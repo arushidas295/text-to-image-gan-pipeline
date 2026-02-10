@@ -1,24 +1,33 @@
 # Text-to-Image GAN Pipeline
 
-This project implements a Text-to-Image generation pipeline using Generative Adversarial Networks (GANs).
+This project demonstrates a basic Text-to-Image generation pipeline using
+Generative Adversarial Networks (GANs).
 
-## Overview
-The model takes a textual description as input and generates a corresponding image using deep learning techniques.
+The model learns to generate simple images conditioned on text embeddings.
+This project is designed for academic demonstration and viva purposes.
 
 ## Technologies Used
 - Python
-- PyTorch / TensorFlow
+- PyTorch
 - GANs
 - NLP (Text Embeddings)
 
-## How to Run
-1. Clone the repository
-2. Install required dependencies
-3. Run the training script
-4. Generate images using text prompts
+## Project Structure
+- models/: Generator and Discriminator models
+- utils/: Dataset and text encoding utilities
+- train.py: Model training script
+- generate.py: Image generation from text
 
-## Results
-The model is capable of generating basic images based on input text descriptions.
+## How to Run
+1. Install dependencies  
+   `pip install -r requirements.txt`
+2. Train the model  
+   `python train.py`
+3. Generate image  
+   `python generate.py`
+
+## Output
+Generated images are saved in the `outputs/` folder.
 
 ## Author
 Arushi Das
